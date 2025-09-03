@@ -1,0 +1,70 @@
+{
+  "updated": "2025-09-02",
+  "roles": [
+    {
+      "title": "Android Developer",
+      "markets": ["USA"],
+      "type": "Tiempo completo",
+      "summary": "Desarrollo nativo Android con enfoque en rendimiento, accesibilidad y arquitectura moderna.",
+      "skills": ["Kotlin", "Jetpack Compose", "Coroutines", "MVVM", "Testing", "CI/CD"],
+      "salary_usa": {
+        "Junior / Entry": "$90k – $120k",
+        "Senior / Mid": "$130k – $160k",
+        "Staff / Lead": "$150k – $270k+ (total comp)"
+      },
+      "apply": "mailto:talent@nextgentech.mx?subject=Android%20Developer"
+    },
+    {
+      "title": "Data Scientist",
+      "markets": ["USA"],
+      "type": "Tiempo completo",
+      "summary": "Modelado estadístico y ML orientado a negocio; experimentación y comunicación clara.",
+      "skills": ["Python", "Pandas/NumPy", "Scikit-learn", "SQL", "Experimentación", "Visualización"],
+      "salary_usa": {
+        "Junior": "$82k – $125k",
+        "Senior": "~$164k – $260k (total comp)",
+        "Staff / Higher": "Por confirmar"
+      },
+      "apply": "mailto:talent@nextgentech.mx?subject=Data%20Scientist"
+    },
+    {
+      "title": "iOS Developer",
+      "markets": ["USA"],
+      "type": "Tiempo completo",
+      "summary": "Aplicaciones nativas iOS con interfaces modernas y código mantenible.",
+      "skills": ["Swift", "SwiftUI/UIKit", "Combine", "MVVM", "Testing", "CI/CD"],
+      "salary_usa": {
+        "Junior / Entry": "$97k – $118k",
+        "Senior / Mid": "$146k – $198k",
+        "Staff / Lead": "$150k – $270k+ (total comp)"
+      },
+      "apply": "mailto:talent@nextgentech.mx?subject=iOS%20Developer"
+    },
+    {
+      "title": "Senior Backend Java",
+      "markets": ["USA"],
+      "type": "Tiempo completo",
+      "summary": "Microservicios robustos con enfoque en calidad, seguridad y escalabilidad.",
+      "skills": ["Java", "Spring Boot", "REST/GraphQL", "JPA/Hibernate", "Docker/K8s", "CI/CD"],
+      "salary_usa": {
+        "Junior / Entry": "$90k – $115k",
+        "Senior / Mid": "$120k – $160k (total comp ~$200k)",
+        "Staff / Lead": "$180k+ base; total comp $300k+"
+      },
+      "apply": "mailto:talent@nextgentech.mx?subject=Senior%20Backend%20Java"
+    },
+    {
+      "title": "LLM Engineer",
+      "markets": ["USA"],
+      "type": "Tiempo completo",
+      "summary": "Diseño y construcción de agentes conversacionales, pipelines RAG, evaluación de prompts y despliegue en producción (MLOps para GenAI).",
+      "skills": ["Python", "LangChain/LlamaIndex", "RAG", "Vector DBs", "OpenAI/Anthropic/Azure", "Evaluación", "MLOps"],
+      "salary_usa": {
+        "Junior / Entry": "$120k – $150k",
+        "Senior / Mid": "$150k – $200k (total comp ~$250k)",
+        "Staff / Lead": "$200k+ (total comp)"
+      },
+      "apply": "mailto:talent@nextgentech.mx?subject=LLM%20Engineer"
+    }
+  ]
+}

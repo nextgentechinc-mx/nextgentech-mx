@@ -1,6 +1,6 @@
 
 /**
- * pages/home.js — Renderiza las vacantes desde assets/jobs.json
+ * pages/home.js — Renderiza las vacantes desde assets/roles.json
  * Para actualizar, edita el JSON y no el HTML.
  */
 (async function renderJobs(){
@@ -9,8 +9,8 @@
   try {
     // Resolver ruta relativa desde root o pages
     const base = location.pathname.includes('/pages/') ? '../' : '';
-    const res = await fetch(base + 'assets/jobs.json');
-    if (!res.ok) throw new Error('No se pudo cargar jobs.json');
+    const res = await fetch(base + 'assets/roles.json');
+    if (!res.ok) throw new Error('No se pudo cargar roles.json');
     const data = await res.json();
     const frag = document.createDocumentFragment();
 
