@@ -15,3 +15,10 @@
 .jobs__list { display:grid; gap: var(--space-6); }
 .job__head { display:flex; align-items:center; justify-content:space-between; gap: var(--space-4); margin-bottom: var(--space-3); }
 .job__title { margin: 0; font-size: clamp(1.1rem, 2.4vw, 1.4rem); }
+
+
+/* Lista de roles objetivo */
+.roles__list { display:grid; gap: var(--space-6); }
+.role__head { display:flex; align-items:center; justify-content:space-between; gap: var(--space-4); margin-bottom: var(--space-3); }
+.role__title { margin: 0; }
+.chip { display:inline-block; padding:.25rem .5rem; border:1px solid var(--color-border); border-radius: var(--radius-sm); font-size:.85rem; color: var(--color-text-muted); }

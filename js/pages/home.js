@@ -1,35 +1,44 @@
-
 /**
- * pages/home.js — Renderiza las vacantes desde assets/jobs.json
- * Para actualizar, edita el JSON y no el HTML.
+ * pages/home.js — Lista de roles objetivo (sin botón de aplicar)
  */
-(async function renderJobs(){
-  const mount = document.getElementById('jobs-list');
+(async function renderRoles(){
+  const mount = document.getElementById('roles-list');
   if (!mount) return;
   try {
-    // Resolver ruta relativa desde root o pages
     const base = location.pathname.includes('/pages/') ? '../' : '';
-    const res = await fetch(base + 'assets/jobs.json');
-    if (!res.ok) throw new Error('No se pudo cargar jobs.json');
+    const res = await fetch(base + 'assets/roles.json');
     const data = await res.json();
+    const items = data.roles || [];
     const frag = document.createDocumentFragment();
 
-    (data.roles || []).forEach(r => {
+    items.forEach(r => {
       const li = document.createElement('li');
-      li.className = 'job card';
+      li.className = 'role card';
+
+      const skills = (r.skills || []).map(s => `<span class="chip">${s}</span>`).join(' ');
+
+      let salaryBlock = '';
+      if (r.salary_usa && typeof r.salary_usa === 'object') {
+        salaryBlock = '<ul class="stack-sm">' + Object.entries(r.salary_usa)
+          .map(([lvl, val]) => `<li><strong>${lvl}:</strong> ${val}</li>`)
+          .join('') + '</ul>';
+      }
+
       li.innerHTML = `
-        <div class="job__head">
-          <h3 class="h2 job__title">${r.title}</h3>
-          <a class="btn" href="${r.apply}">Aplicar</a>
+        <div class="role__head">
+          <h3 class="h2 role__title">${r.title}</h3>
         </div>
-        <p class="p muted">${r.location} • ${r.type}</p>
-        <p class="p">${r.summary}</p>
+        <p class="p muted">${(r.markets||['USA']).join(' / ')} • ${r.type || ''}</p>
+        <p class="p">${r.summary || ''}</p>
+        <div class="role__salaries">${salaryBlock}</div>
+        <div class="role__skills">${skills}</div>
       `;
       frag.appendChild(li);
     });
+    mount.innerHTML = '';
     mount.appendChild(frag);
   } catch (e) {
-    mount.innerHTML = '<p class="p muted">No hay vacantes disponibles por el momento.</p>';
+    mount.innerHTML = '<p class="p muted">No hay roles por el momento.</p>';
     console.error(e);
   }
 })();
