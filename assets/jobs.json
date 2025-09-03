@@ -1,0 +1,26 @@
+{
+  "updated": "2025-09-02",
+  "roles": [
+    {
+      "title": "Java Developer (Sr)",
+      "location": "CDMX / Remoto MX",
+      "type": "Full-time",
+      "summary": "Microservicios con Spring Boot, JPA, CI/CD. Inglés intermedio.",
+      "apply": "mailto:talent@nextgentech.mx?subject=Java%20Developer%20(Sr)"
+    },
+    {
+      "title": "Frontend Engineer",
+      "location": "Remoto MX",
+      "type": "Full-time",
+      "summary": "React/TypeScript, diseño responsivo, consumo de APIs.",
+      "apply": "mailto:talent@nextgentech.mx?subject=Frontend%20Engineer"
+    },
+    {
+      "title": "Data Engineer",
+      "location": "Guadalajara / Remoto MX",
+      "type": "Contrato",
+      "summary": "Pipelines, SQL avanzado, Python, orquestación (Airflow/Luigi).",
+      "apply": "mailto:talent@nextgentech.mx?subject=Data%20Engineer"
+    }
+  ]
+}

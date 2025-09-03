@@ -1,0 +1,17 @@
+
+/* pages/home.css — Estilos específicos del home */
+.hero { padding: clamp(4rem, 8vw, 7rem) 0; }
+.hero__title { font-size: clamp(2rem, 5vw, 3rem); color: var(--color-brand-700); margin:0 0 var(--space-4); }
+.hero__subtitle { font-size: 1.125rem; color: var(--color-text-muted); max-width: 60ch; }
+
+.unique { padding: var(--space-16) 0; }
+.unique__cards { display:grid; gap: var(--space-6); grid-template-columns: 1fr; }
+@media (min-width: var(--bp-md)) { .unique__cards { grid-template-columns: repeat(3, 1fr); } }
+.unique__card { padding: var(--space-6); border-radius: var(--radius-lg); background: var(--color-surface); border:1px solid var(--color-border); box-shadow: var(--shadow-sm); }
+
+
+/* Jobs list */
+.jobs { padding: var(--space-12) 0; }
+.jobs__list { display:grid; gap: var(--space-6); }
+.job__head { display:flex; align-items:center; justify-content:space-between; gap: var(--space-4); margin-bottom: var(--space-3); }
+.job__title { margin: 0; font-size: clamp(1.1rem, 2.4vw, 1.4rem); }

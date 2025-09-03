@@ -1,0 +1,58 @@
+/* ===================================================================
+   tokens.css — Variables de diseño globales para Nextgentech MX
+   Edita aquí colores, tipografías, espacios y breakpoints.
+   =================================================================== */
+
+
+:root {
+  /* ===== Colores (inspirados en el original) ===== */
+  --color-brand-800: #0F1A34;
+  --color-brand-700: #15203B;
+  --color-brand-600: #1F2C4D;
+  --color-accent-500: #5B6BE1;
+  --color-accent-400: #7B8CF5;
+  --color-accent-300: #A7B1FF;
+  --color-bg: #F5F6F8;
+  --color-surface: #FFFFFF;
+  --color-text: #0F172A;
+  --color-text-muted: #475569;
+  --color-border: #E5E7EB;
+
+  /* ===== Tipografías ===== */
+  --font-display: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  --font-size-base: 16px;
+  --line-height: 1.6;
+
+  /* ===== Espaciado y otros ===== */
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  --radius-sm: .375rem;
+  --radius-md: .5rem;
+  --radius-lg: .75rem;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.05);
+  --shadow-md: 0 6px 20px rgba(0,0,0,.08);
+
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+}
+
+/* Jerarquía y acentos */
+.h1 { font-family: var(--font-display); color: var(--color-brand-800); }
+.h2 { font-family: var(--font-display); color: var(--color-brand-700); }
+body { font-family: var(--font-sans); }
+.btn { background: var(--color-accent-500); }
+.btn:hover { background: var(--color-accent-400); }
+.navbar__brand { color: var(--color-brand-800); }
