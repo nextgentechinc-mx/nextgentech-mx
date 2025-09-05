@@ -12,6 +12,11 @@
     try {
       const res = await fetch(root + url);
       if (res && res.ok) el.innerHTML = await res.text();
+      // Corrige el path del logo en el header después de inyectar el HTML
+      if (url === 'partials/header.html') {
+        const logo = document.querySelector('.navbar__brand img');
+        if (logo) logo.src = root + 'img/Nextgen-logo.png';
+      }
     } catch (e) { console.warn('No se pudo cargar', url, e); }
   }
 
