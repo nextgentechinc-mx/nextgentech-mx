@@ -1,0 +1,5 @@
+- que los footer y header tengan el mismo estilo que la original, incluso meter el mismo logo
+- cuando hablamos de formularios que los botones se les parezca
+- fuentes usasas en textos validar qu sean iguales al original
+- pasar todo lo que no sea marca propia a espanol
+-

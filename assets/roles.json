@@ -8,9 +8,9 @@
       "summary": "Desarrollo nativo Android con enfoque en rendimiento, accesibilidad y arquitectura moderna.",
       "skills": ["Kotlin","Jetpack Compose","Coroutines","MVVM","Testing","CI/CD"],
       "salary_usa": {
-        "Junior / Entry": "$90k – $120k",
-        "Senior / Mid": "$130k – $160k",
-        "Staff / Lead": "$150k – $270k+ (total comp)"
+        "Junior / Entry": "",
+        "Senior / Mid": "",
+        "Staff / Lead": ""
       }
     },
     {
@@ -20,9 +20,9 @@
       "summary": "Modelado estadístico y ML orientado a negocio; experimentación y comunicación clara.",
       "skills": ["Python","Pandas/NumPy","Scikit-learn","SQL","Experimentación","Visualización"],
       "salary_usa": {
-        "Junior": "$82k – $125k",
-        "Senior": "~$164k – $260k (total comp)",
-        "Staff / Higher": "$260k+ total comp"
+        "Junior": "",
+        "Senior": "",
+        "Staff / Higher": ""
       }
     },
     {
@@ -32,9 +32,9 @@
       "summary": "Aplicaciones nativas iOS con interfaces modernas y código mantenible.",
       "skills": ["Swift","SwiftUI/UIKit","Combine","MVVM","Testing","CI/CD"],
       "salary_usa": {
-        "Junior / Entry": "$97k – $118k",
-        "Senior / Mid": "$146k – $198k",
-        "Staff / Lead": "$150k – $270k+ (total comp)"
+        "Junior / Entry": "",
+        "Senior / Mid": "",
+        "Staff / Lead": ""
       }
     },
     {
@@ -44,9 +44,9 @@
       "summary": "Microservicios robustos con enfoque en calidad, seguridad y escalabilidad.",
       "skills": ["Java","Spring Boot","REST/GraphQL","JPA/Hibernate","Docker/K8s","CI/CD"],
       "salary_usa": {
-        "Junior / Entry": "$90k – $115k",
-        "Senior / Mid": "$120k – $160k (total comp ~$200k)",
-        "Staff / Lead": "$180k+ base; total comp $300k+"
+        "Junior / Entry": "",
+        "Senior / Mid": "",
+        "Staff / Lead": ""
       }
     },
     {
@@ -56,9 +56,9 @@
       "summary": "Diseño y construcción de agentes conversacionales, pipelines RAG, evaluación de prompts y despliegue en producción (MLOps para GenAI).",
       "skills": ["Python","LangChain/LlamaIndex","RAG","Vector DBs","OpenAI/Anthropic/Azure","Evaluación","MLOps"],
       "salary_usa": {
-        "Junior / Entry": "$120k – $150k",
-        "Senior / Mid": "$150k – $200k (total comp ~$250k)",
-        "Staff / Lead": "$200k+ (total comp)"
+        "Junior / Entry": "",
+        "Senior / Mid": "",
+        "Staff / Lead": ""
       }
     }
   ]
