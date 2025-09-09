@@ -1,8 +1,53 @@
+.hero__grid {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2.5rem;
+}
+.hero__content {
+	flex: 1 1 0;
+	min-width: 0;
+}
+.hero__image {
+	flex: 0 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	max-width: 440px;
+}
+@media (max-width: 900px) {
+	.hero__grid {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1.5rem;
+	}
+	.hero__image {
+		justify-content: center;
+		width: 100%;
+		max-width: 100%;
+	}
+}
 
 /* pages/home.css — Estilos específicos del home */
 .hero { padding: clamp(4rem, 8vw, 7rem) 0; }
-.hero__title { font-size: clamp(2rem, 5vw, 3rem); color: var(--color-brand-700); margin:0 0 var(--space-4); }
-.hero__subtitle { font-size: 1.125rem; color: var(--color-text-muted); max-width: 60ch; }
+.hero__title {
+		font-size: clamp(1.7rem, 4vw, 2.3rem);
+		color: #232946;
+		margin: 0 0 1.2rem 0;
+		font-family: 'Inter', Arial, sans-serif;
+		font-weight: 700;
+		letter-spacing: -0.5px;
+		line-height: 1.15;
+}
+.hero__subtitle {
+	font-size: 1.22rem;
+	color: #7c7c8a;
+	max-width: 60ch;
+	font-family: 'Inter', Arial, sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-top: 0.7rem;
+}
 
 .unique { padding: var(--space-16) 0; }
 .unique__cards { display:grid; gap: var(--space-6); grid-template-columns: 1fr; }
