@@ -19,45 +19,46 @@
   <!-- Header inyectado -->
   <div id="site-header"></div>
 
-  <!-- Main -->
-  <main>
+  <!-- Header inyectado dinámicamente -->
+  <div id="site-header"></div>
 
+  <!-- Contenido principal -->
+  <main>
+    <!-- Sección principal: formulario de contacto y branding -->
     <section class="section container" style="padding-top:2.5rem; padding-bottom:2.5rem;">
-      <div class="hero__grid"
-        style="display:grid; grid-template-columns:1fr minmax(320px,440px); gap:2.5rem; align-items:center; max-width:1100px; margin:0 auto;">
-        <!-- Columna izquierda: formulario y copy -->
+      <div class="hero__grid" style="display:grid; grid-template-columns:1fr minmax(320px,440px); gap:2.5rem; align-items:center; max-width:1100px; margin:0 auto;">
+        <!-- Columna izquierda: formulario y copy motivacional -->
         <div class="hero__content">
-          <h1 class="h1" style="font-size:2.3rem; font-weight:800; color:#23294a; margin-bottom:1.2rem;">Conversemos
-            sobre tu futuro en tecnología</h1>
-          <p class="p" style="font-size:1.18rem; color:#3a4250; margin-bottom:1.3rem; max-width:700px;">¿Listo para
-            impulsar tu carrera o tu empresa? Completa el formulario y nuestro equipo te contactará pronto.</p>
-          <div class="card"
-            style="padding: 1.5rem 1rem; box-sizing: border-box; background: var(--color-bg-card); margin-bottom:1.2rem;">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLScBpsU6K2nt6fR_XVk_Y6X9DwXaQTijNnab2jI88vw1VAF76Q/viewform?embedded=true"
-              width="100%" height="650" frameborder="0" marginheight="0" marginwidth="0"
-              style="border:none; min-width:300px; max-width:100%; background:transparent;">Cargando…</iframe>
+          <h1 class="h1" style="font-size:2.3rem; font-weight:800; color:#23294a; margin-bottom:1.2rem;">Conversemos sobre tu futuro en tecnología</h1>
+          <p class="p" style="font-size:1.18rem; color:#3a4250; margin-bottom:1.3rem; max-width:700px;">¿Listo para impulsar tu carrera o tu empresa? Completa el formulario y nuestro equipo te contactará pronto.</p>
+          <div class="card" style="padding: 1.5rem 1rem; box-sizing: border-box; background: var(--color-bg-card); margin-bottom:1.2rem;">
+            <!-- Google Form embebido para contacto -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScBpsU6K2nt6fR_XVk_Y6X9DwXaQTijNnab2jI88vw1VAF76Q/viewform?embedded=true" width="100%" height="650" frameborder="0" marginheight="0" marginwidth="0" style="border:none; min-width:300px; max-width:100%; background:transparent;">Cargando…</iframe>
           </div>
-          <p class="p muted" style="font-size:0.98rem; color:#6b7280;">Tu información es confidencial. Solo la usaremos
-            para responderte. Consulta nuestra <a href="/pages/privacy.html"
-              style="color:#3b5ed7; text-decoration:underline;">política de privacidad</a>.</p>
+          <p class="p muted" style="font-size:0.98rem; color:#6b7280;">Tu información es confidencial. Solo la usaremos para responderte. Consulta nuestra <a href="/pages/privacy.html" style="color:#3b5ed7; text-decoration:underline;">política de privacidad</a>.</p>
         </div>
-        <!-- Columna derecha: información y branding -->
+        <!-- Columna derecha: información de contacto y branding visual -->
         <div class="hero__image" style="text-align:center;">
-          <img src="/img/our-team-nextgen.jpg" alt="Equipo Nextgen"
-            style="max-width: 340px; width: 100%; height: auto; display: block; margin: 0 auto 2rem auto; border-radius:1.2rem; box-shadow:0 2px 16px rgba(35,41,74,0.07);">
+          <img src="/img/our-team-nextgen.jpg" alt="Equipo Nextgen" style="max-width: 340px; width: 100%; height: auto; display: block; margin: 0 auto 2rem auto; border-radius:1.2rem; box-shadow:0 2px 16px rgba(35,41,74,0.07);">
           <div class="card" style="background:transparent; box-shadow:none; padding:0;">
             <h2 class="h2" style="font-size:1.25rem; color:#23294a; margin-bottom:0.7rem;">Información de contacto</h2>
-            <p class="p muted" style="font-size:1.08rem; color:#3a4250; margin-bottom:0.5rem;">Correo: <a
-                href="mailto:nextgen@nextgentech.mx"
-                style="color:#3b5ed7; text-decoration:underline;">nextgen@nextgentech.mx</a></p>
+            <p class="p muted" style="font-size:1.08rem; color:#3a4250; margin-bottom:0.5rem;">Correo: <a href="mailto:nextgen@nextgentech.mx" style="color:#3b5ed7; text-decoration:underline;">nextgen@nextgentech.mx</a></p>
+            <!-- Teléfono disponible solo si se habilita -->
             <!-- <p class="p muted" style="font-size:1.08rem; color:#3a4250;">Teléfono: <a href="tel:+521234567890" style="color:#3b5ed7; text-decoration:underline;">+52 123 456 7890</a></p> -->
           </div>
         </div>
       </div>
     </section>
-
   </main>
+
+  <!-- Footer inyectado dinámicamente -->
+  <div id="site-footer"></div>
+
+  <!-- JS Core -->
+  <script src="/js/core/loader.js?v=20250902-3" defer></script>
+
+</body>
+</html>
 
   <!-- Footer inyectado -->
   <div id="site-footer"></div>
