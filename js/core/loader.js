@@ -1,13 +1,24 @@
 
+
 /**
- * core/loader.js — Header/Footer compartidos con raíz calculada.
- * Evita rutas relativas rotas desde /pages/* o /.
+ * core/loader.js
+ *
+ * Inyecta dinámicamente el header y footer compartidos en todas las páginas,
+ * calculando la raíz del sitio para evitar rutas relativas rotas desde /pages/* o /.
+ * Además, normaliza los enlaces de navegación y gestiona el menú desplegable de servicios.
+ *
+ * Diseño: todo se ejecuta en un IIFE async para permitir await y evitar contaminar el global scope.
  */
 (async function initLayout(){
-  // Calcula raíz del sitio (antes de /pages/ si existe)
+  // Calcula la raíz del sitio (antes de /pages/ si existe), para rutas absolutas correctas
   const path = location.pathname;
   const root = path.includes('/pages/') ? path.split('/pages/')[0] + '/' : '/';
 
+  /**
+   * fetchInto(el, url): Carga HTML externo en un elemento y corrige recursos si es necesario.
+   * @param {HTMLElement} el - Elemento destino
+   * @param {string} url - Ruta relativa al root
+   */
   async function fetchInto(el, url){
     try {
       const res = await fetch(root + url);
@@ -20,25 +31,26 @@
     } catch (e) { console.warn('No se pudo cargar', url, e); }
   }
 
-
+  // Inyecta header y configura navegación si existe el contenedor
   const headerEl = document.getElementById('site-header');
   if (headerEl) {
     await fetchInto(headerEl, 'partials/header.html');
-    normalizeLinks(root);
-    markActive(root);
-    setupDropdownMenu();
+    normalizeLinks(root); // Corrige todos los href de navegación
+    markActive(root);     // Marca el enlace activo según la ruta
+    setupDropdownMenu();  // Inicializa el menú desplegable de servicios
   }
-  // Dropdown Servicios: click para abrir/cerrar, cerrar al perder foco o click fuera
+
+  /**
+   * setupDropdownMenu(): Gestiona el menú desplegable de "Servicios" (abrir/cerrar, accesibilidad)
+   */
   function setupDropdownMenu() {
     const dropdown = document.querySelector('.dropdown');
     const trigger = dropdown ? dropdown.querySelector('.navbar__link') : null;
     const panel = dropdown ? dropdown.querySelector('.dropdown__panel') : null;
     if (!dropdown || !trigger || !panel) return;
 
-    // Estado
-    let open = false;
+    let open = false; // Estado del panel
 
-    // Mostrar/ocultar panel
     function showPanel() {
       panel.style.display = 'grid';
       open = true;
@@ -50,37 +62,35 @@
       trigger.setAttribute('aria-expanded', 'false');
     }
 
-    // Click en trigger
+    // Click en el trigger abre/cierra
     trigger.addEventListener('click', function(e) {
       e.preventDefault();
-      if (open) {
-        hidePanel();
-      } else {
-        showPanel();
-      }
+      open ? hidePanel() : showPanel();
     });
 
-    // Click fuera
+    // Click fuera del dropdown cierra
     document.addEventListener('mousedown', function(e) {
-      if (!dropdown.contains(e.target)) {
-        hidePanel();
-      }
+      if (!dropdown.contains(e.target)) hidePanel();
     });
 
-    // Tecla Escape
+    // Escape cierra
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') hidePanel();
     });
 
-    // Opcional: cerrar al perder foco
+    // Mouse sale del panel cierra
     panel.addEventListener('mouseleave', hidePanel);
     // Inicialmente oculto
     hidePanel();
   }
 
+  // Inyecta footer si existe el contenedor
   const footerEl = document.getElementById('site-footer');
   if (footerEl) await fetchInto(footerEl, 'partials/footer.html');
 
+  /**
+   * normalizeLinks(root): Convierte todos los data-route en href absolutos desde root
+   */
   function normalizeLinks(root) {
     // Brand → Home
     const brand = document.querySelector('.navbar__brand');
@@ -101,6 +111,9 @@
     });
   }
 
+  /**
+   * markActive(root): Marca el enlace activo en la navegación según la ruta actual
+   */
   function markActive(root) {
     const path = location.pathname;
     document.querySelectorAll('[data-route]').forEach(a => {
