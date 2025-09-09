@@ -1,17 +1,17 @@
 contacto:
 
-Cambiar contacto@nexgentech.mx por el correcto: nextgen@nexgentech.mx
+x: Cambiar contacto@nexgentech.mx por el correcto: nextgen@nexgentech.mx
 
-texto del contacto: queires formar parte de nuestra comunidad o quieres consultar al respecto de vacantes no mencionadas
+x: texto del contacto: queires formar parte de nuestra comunidad o quieres consultar al respecto de vacantes no mencionadas
 
 
 index
-- Cuidar los espacios en blanco se ven muy pronunciados.
+x: - Cuidar los espacios en blanco se ven muy pronunciados.
 
 
 look and feel: 
-- logo menu hacerlo lo mas parecido al original
-- foother tambien hacerlo lo mas parecido al original
+x: - logo menu hacerlo lo mas parecido al original
+x: - foother tambien hacerlo lo mas parecido al original
 
 
 
