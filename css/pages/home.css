@@ -1,3 +1,13 @@
+.roles.container {
+	margin-bottom: 2.8rem;
+}
+.section-divider {
+	border: none;
+	border-top: 1.5px solid #e5e7eb;
+				margin: 1.7rem 0 2.5rem 0;
+	width: 100%;
+	background: none;
+}
 .hero__grid {
 	display: flex;
 	align-items: center;
@@ -29,7 +39,7 @@
 }
 
 /* pages/home.css — Estilos específicos del home */
-.hero { padding: clamp(4rem, 8vw, 7rem) 0; }
+.hero { padding: clamp(1.2rem, 4vw, 2.2rem) 0 0.3rem 0; }
 .hero__title {
 		font-size: clamp(1.7rem, 4vw, 2.3rem);
 		color: #232946;
@@ -41,7 +51,7 @@
 }
 .hero__subtitle {
 	font-size: 1.22rem;
-	color: #7c7c8a;
+		color: #232946;
 	max-width: 60ch;
 	font-family: 'Inter', Arial, sans-serif;
 	font-weight: 400;
