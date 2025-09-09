@@ -20,11 +20,62 @@
     } catch (e) { console.warn('No se pudo cargar', url, e); }
   }
 
+
   const headerEl = document.getElementById('site-header');
   if (headerEl) {
     await fetchInto(headerEl, 'partials/header.html');
     normalizeLinks(root);
     markActive(root);
+    setupDropdownMenu();
+  }
+  // Dropdown Servicios: click para abrir/cerrar, cerrar al perder foco o click fuera
+  function setupDropdownMenu() {
+    const dropdown = document.querySelector('.dropdown');
+    const trigger = dropdown ? dropdown.querySelector('.navbar__link') : null;
+    const panel = dropdown ? dropdown.querySelector('.dropdown__panel') : null;
+    if (!dropdown || !trigger || !panel) return;
+
+    // Estado
+    let open = false;
+
+    // Mostrar/ocultar panel
+    function showPanel() {
+      panel.style.display = 'grid';
+      open = true;
+      trigger.setAttribute('aria-expanded', 'true');
+    }
+    function hidePanel() {
+      panel.style.display = 'none';
+      open = false;
+      trigger.setAttribute('aria-expanded', 'false');
+    }
+
+    // Click en trigger
+    trigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (open) {
+        hidePanel();
+      } else {
+        showPanel();
+      }
+    });
+
+    // Click fuera
+    document.addEventListener('mousedown', function(e) {
+      if (!dropdown.contains(e.target)) {
+        hidePanel();
+      }
+    });
+
+    // Tecla Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') hidePanel();
+    });
+
+    // Opcional: cerrar al perder foco
+    panel.addEventListener('mouseleave', hidePanel);
+    // Inicialmente oculto
+    hidePanel();
   }
 
   const footerEl = document.getElementById('site-footer');
