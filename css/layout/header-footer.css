@@ -58,6 +58,18 @@
 	display: flex;
 	align-items: center;
 }
+
+/* Pipe visual entre logo y menú */
+.navbar__divider {
+	display: inline-block;
+	width: 1px;
+	height: 40px;
+	background: #d1d5db;
+	margin: 0 32px;
+	vertical-align: middle;
+	border-radius: 2px;
+	opacity: 0.85;
+}
 .navbar__menu {
 	display: flex;
 	align-items: center;
