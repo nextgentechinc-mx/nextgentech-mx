@@ -1,19 +1,8 @@
-contacto:
-
-x: Cambiar contacto@nexgentech.mx por el correcto: nextgen@nexgentech.mx
-
-x: texto del contacto: queires formar parte de nuestra comunidad o quieres consultar al respecto de vacantes no mencionadas
-
-
-index
-x: - Cuidar los espacios en blanco se ven muy pronunciados.
-
-
-look and feel: 
-x: - logo menu hacerlo lo mas parecido al original
-x: - foother tambien hacerlo lo mas parecido al original
-
-
-
-
+index: 
+- division entre Nextgen Technologies y el menu 
+- mejorar el logo del header y el foother  (utilizar el png de la pagina original)
+- las letras del menu estan como un poco separadas tratar de juntarlas para que se parezca mas
+- ver que el menu este mas centrado
+- cuando pasas por encima del menu el menu donde pasas se pone morado y deberia de ser negro
+- el dropdown no sale cuando pasas sobr el menu
 
