@@ -76,18 +76,24 @@
 	gap: 2.8rem;
 	margin-left: auto;
 }
+/* Menú igual al original: Roboto, 15px, sin mayúsculas, color #232946, peso 500, alineado */
 .navbar__link {
-	padding: 0.5rem 0.5rem;
-	color: #7c7c8a;
-	font-size: 1.05rem;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 400;
+	padding: 0 15px;
+	color: #232946;
+	font-size: 15px;
+	font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+	font-weight: 500;
 	text-transform: uppercase;
-	letter-spacing: 0.5px;
+	letter-spacing: 0;
 	background: none;
 	border: none;
 	transition: color 0.2s, border-bottom 0.2s;
 	border-bottom: 2px solid transparent;
+	line-height: 1.2;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	box-shadow: none;
 }
 .navbar__link.is-active,
 .navbar__link:hover {
