@@ -60,21 +60,23 @@
 }
 
 /* Pipe visual entre logo y menú */
+/* Pipe divisor igual al original: más visible */
 .navbar__divider {
 	display: inline-block;
-	width: 1px;
-	height: 40px;
-	background: #d1d5db;
-	margin: 0 32px;
+	width: 1.5px;
+	height: 36px;
+	background: #c2c9d6;
+	margin: 0 20px;
 	vertical-align: middle;
 	border-radius: 2px;
-	opacity: 0.85;
+	opacity: 1;
 }
+/* Menú alineado a la izquierda como el original */
 .navbar__menu {
 	display: flex;
 	align-items: center;
-	gap: 2.8rem;
-	margin-left: auto;
+	gap: 2.2rem;
+	margin-left: 0;
 }
 /* Menú igual al original: Roboto, 15px, sin mayúsculas, color #232946, peso 500, alineado */
 .navbar__link {
