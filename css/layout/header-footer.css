@@ -95,10 +95,12 @@
 	align-items: center;
 	box-shadow: none;
 }
+/* Activo/hover igual al original: gris oscuro y negrita */
 .navbar__link.is-active,
 .navbar__link:hover {
-	color: #5956e9;
-	border-bottom: 2px solid #5956e9;
+	color: #232946;
+	font-weight: 700;
+	border-bottom: 2px solid #232946;
 	text-decoration: none;
 }
 .dropdown { position: relative; }
