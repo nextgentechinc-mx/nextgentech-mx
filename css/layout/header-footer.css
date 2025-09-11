@@ -61,15 +61,17 @@
 
 /* Pipe visual entre logo y menú */
 /* Pipe divisor igual al original: más visible */
+/* Pipe divisor más notorio y pegado al logo */
+/* Pipe divisor completamente sólido */
 .navbar__divider {
 	display: inline-block;
-	width: 1.5px;
-	height: 36px;
-	background: #c2c9d6;
-	margin: 0 20px;
+	width: 2px;
+	height: 32px;
+	background: #bfc5d2;
+	margin: 0 8px;
 	vertical-align: middle;
 	border-radius: 2px;
-	opacity: 1;
+	opacity: 1 !important;
 }
 /* Menú alineado a la izquierda como el original */
 .navbar__menu {
