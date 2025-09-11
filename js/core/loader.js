@@ -62,11 +62,14 @@
       trigger.setAttribute('aria-expanded', 'false');
     }
 
-    // Click en el trigger abre/cierra
-    trigger.addEventListener('click', function(e) {
-      e.preventDefault();
-      open ? hidePanel() : showPanel();
+    // Hover en el trigger abre/cierra el panel (igual al original)
+    trigger.addEventListener('mouseenter', showPanel);
+    trigger.addEventListener('mouseleave', function(e) {
+      // Si el mouse entra al panel, no cerrar
+      if (!panel.contains(e.relatedTarget)) hidePanel();
     });
+    panel.addEventListener('mouseenter', showPanel);
+    panel.addEventListener('mouseleave', hidePanel);
 
     // Click fuera del dropdown cierra
     document.addEventListener('mousedown', function(e) {
@@ -78,8 +81,6 @@
       if (e.key === 'Escape') hidePanel();
     });
 
-    // Mouse sale del panel cierra
-    panel.addEventListener('mouseleave', hidePanel);
     // Inicialmente oculto
     hidePanel();
   }
