@@ -79,7 +79,7 @@
 /* Menú igual al original: Roboto, 15px, sin mayúsculas, color #232946, peso 500, alineado */
 .navbar__link {
 	padding: 0 15px;
-	color: #232946;
+	color: #7a7a7a;
 	font-size: 15px;
 	font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 	font-weight: 500;
