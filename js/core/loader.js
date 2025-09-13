@@ -3,16 +3,14 @@
 /**
  * core/loader.js
  *
- * Inyecta dinámicamente el header y footer compartidos en todas las páginas,
- * calculando la raíz del sitio para evitar rutas relativas rotas desde /pages/* o /.
+ * Inyecta dinámicamente el header y footer compartidos en todas las páginas.
  * Además, normaliza los enlaces de navegación y gestiona el menú desplegable de servicios.
  *
  * Diseño: todo se ejecuta en un IIFE async para permitir await y evitar contaminar el global scope.
  */
 (async function initLayout(){
-  // Calcula la raíz del sitio (antes de /pages/ si existe), para rutas absolutas correctas
-  const path = location.pathname;
-  const root = path.includes('/pages/') ? path.split('/pages/')[0] + '/' : '/';
+  // Ya no existe /pages/, todo está en root. Usamos rutas relativas simples.
+  const root = '';
 
   /**
    * fetchInto(el, url): Carga HTML externo en un elemento y corrige recursos si es necesario.
@@ -26,7 +24,7 @@
       // Corrige el path del logo en el header después de inyectar el HTML
       if (url === 'partials/header.html') {
         const logo = document.querySelector('.navbar__brand img');
-        if (logo) logo.src = root + 'img/Nextgen-logo.png';
+        if (logo) logo.src = 'img/Nextgen-logo.png';
       }
     } catch (e) { console.warn('No se pudo cargar', url, e); }
   }
@@ -35,8 +33,8 @@
   const headerEl = document.getElementById('site-header');
   if (headerEl) {
     await fetchInto(headerEl, 'partials/header.html');
-    normalizeLinks(root); // Corrige todos los href de navegación
-    markActive(root);     // Marca el enlace activo según la ruta
+    normalizeLinks(); // Corrige todos los href de navegación
+    markActive();     // Marca el enlace activo según la ruta
     setupDropdownMenu();  // Inicializa el menú desplegable de servicios
   }
 
@@ -92,22 +90,22 @@
   /**
    * normalizeLinks(root): Convierte todos los data-route en href absolutos desde root
    */
-  function normalizeLinks(root) {
+  function normalizeLinks() {
     // Brand → Home
     const brand = document.querySelector('.navbar__brand');
     if (brand) {
-      brand.setAttribute('href', root + 'index.html');
+      brand.setAttribute('href', 'index.html');
       brand.setAttribute('data-route','/');
     }
-    // Todos los data-route → href absolutos desde root
+    // Todos los data-route → href relativos desde root
     document.querySelectorAll('[data-route]').forEach(a => {
       const route = a.getAttribute('data-route');
       if (!route) return;
       if (route === '/') {
-        a.setAttribute('href', root + 'index.html');
+        a.setAttribute('href', 'index.html');
       } else {
         const clean = route.replace(/^\/?/, '');
-        a.setAttribute('href', root + clean);
+        a.setAttribute('href', clean);
       }
     });
   }
@@ -115,7 +113,7 @@
   /**
    * markActive(root): Marca el enlace activo en la navegación según la ruta actual
    */
-  function markActive(root) {
+  function markActive() {
     const path = location.pathname;
     document.querySelectorAll('[data-route]').forEach(a => {
       const route = a.getAttribute('data-route');
