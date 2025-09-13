@@ -1,8 +1,0 @@
-index: 
-- division entre Nextgen Technologies y el menu 
-- mejorar el logo del header y el foother  (utilizar el png de la pagina original)
-- las letras del menu estan como un poco separadas tratar de juntarlas para que se parezca mas
-- ver que el menu este mas centrado
-- cuando pasas por encima del menu el menu donde pasas se pone morado y deberia de ser negro
-- el dropdown no sale cuando pasas sobr el menu
-
