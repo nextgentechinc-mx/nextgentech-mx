@@ -1,0 +1,31 @@
+.dropdown__panel--vertical {
+  display: flex !important;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 260px;
+  padding: 1rem 0.5rem;
+}
+
+.dropdown__panel--vertical .dropdown__item {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
+  display: flex;
+  align-items: center;
+  transition: background 0.15s;
+}
+
+.dropdown__panel--vertical .dropdown__item:hover {
+  background: #f3f4f6;
+}
+
+.dropdown__panel--vertical .dropdown__icon {
+  margin-right: 0.8rem;
+}
+
+.dropdown__panel--vertical .dropdown__text {
+  display: flex;
+  flex-direction: column;
+}
