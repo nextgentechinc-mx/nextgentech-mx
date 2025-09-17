@@ -19,21 +19,18 @@
     <section class="section container stack-md">
       <h1 class="h1">Vacantes Abiertas</h1>
       <p class="p muted">Aquí encontrarás las oportunidades laborales activas en Nextgen Technologies MX. ¡Explora y postúlate!</p>
-      <!-- Aquí puedes agregar un listado dinámico o estático de vacantes -->
-      <ul class="stack-md">
-        <li class="card">
-          <h2 class="h2">Desarrollador(a) Frontend React</h2>
-          <p class="p muted">Ubicación: Remoto | Experiencia: 2+ años</p>
-        </li>
-        <li class="card">
-          <h2 class="h2">Ingeniero(a) QA Automation</h2>
-          <p class="p muted">Ubicación: CDMX o Remoto | Experiencia: 3+ años</p>
-        </li>
-      </ul>
+      <div class="apply-instructions">
+        <strong>¿Cómo postularte?</strong><br>
+        Envía tu CV actualizado y el título de la vacante que te interesa a <a href="mailto:nextgen@nextgentech.mx">nextgen@nextgentech.mx</a>.<br>
+        No olvides incluir un número telefónico con clave internacional para que podamos contactarte.<br>
+        <span style="display:block;margin-top:0.5em;">¡Queremos conocerte y que formes parte de nuestro equipo!</span>
+      </div>
+      <div id="jobs-list" class="stack-md"></div>
     </section>
   </main>
   <!-- Footer inyectado dinámicamente -->
   <div id="site-footer"></div>
   <script src="js/core/loader.js?v=20250902-3" defer></script>
+  <script src="js/pages/open_positions.js" defer></script>
 </body>
 </html>
