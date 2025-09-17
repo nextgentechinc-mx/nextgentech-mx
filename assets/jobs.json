@@ -1,0 +1,96 @@
+[
+  {
+    "title": "Senior iOS Engineer",
+    "location": "SFO, CA",
+    "modality": "local",
+    "relocation": true,
+    "description": "We're seeking a Senior iOS Engineer to lead our mobile client development. We will also be building an Android and a mobile-friendly web app in parallel, so there may be room to stretch impact depending on your skills. You'll architect the Android stack, set standards, and build a highly performant, reliable, and secure app from the ground up. This role could evolve into a mobile lead across platforms as we scale.",
+    "requirements": [
+      "5+ years building and shipping consumer-facing iOS apps natively in Swift"
+    ],
+    "bonuses": [
+      "Experience building for the Latin American Market",
+      "Experience in financial technology",
+      "Good design sense",
+      "Full-stack engineering skillset and ability to flex across other parts of the stack"
+  ]
+  },
+  {
+    "title": "Senior Android Engineer",
+    "location": "SFO",
+    "modality": "local",
+    "relocation": true,
+    "description": "We're seeking a Senior Android Engineer to lead our mobile client development. We will also be building an iOS and a mobile-friendly web app in parallel, so there may be room to stretch impact depending on your skills. You'll architect the Android stack, set standards, and build a highly performant, reliable, and secure app from the ground up. This role could evolve into a mobile lead across platforms as we scale.",
+    "requirements": [
+      "5+ years building and shipping consumer-facing Android apps natively in Java or Kotlin at scale"
+    ],
+    "bonuses": [
+      "Experience building for the Latin American Market",
+      "Experience in financial technology",
+      "Good design sense",
+      "Full-stack engineering skillset and ability to flex across other parts of the stack"
+  ]
+  },
+  {
+    "title": "Senior Backend Engineer",
+    "location": "SFO",
+    "modality": "local",
+    "relocation": true,
+    "description": "We're seeking a Senior Backend Engineer to lead our core product development. Our backend serves a REST API that powers our iOS, Android, and Web frontends. You will integrate with cryptocurrency wallet and banking service providers, among other services for auth, ledger, payment rails, etc. This is a financial services application with significant complexity handling real money at scale, internationally. Our technology choices are still to-be-made, but we’re leaning toward a Python (FastAPI/Pydantic) monolith with Postgres and Redis on AWS. We are open to Rust and/or Go for any services that need to be broken out. This is a critically important role on our team. You’ll be working directly with the technical founders to set standards and build a highly performant, reliable, and secure app from the ground up. This role may evolve into a backend or general engineering lead as we scale.",
+    "requirements": [
+      "5+ years building and shipping web applications in Python, Go, or Rust",
+      "Experience generally across the backend: working with Postgres, Redis, AWS, etc."
+    ],
+    "bonuses": [
+      "Experience in financial technology",
+      "Full-stack engineering skillset and ability to flex across other parts of the stack"
+  ]
+  },
+  {
+    "title": "Senior Frontend Engineer",
+    "location": "SFO",
+    "modality": "local",
+    "relocation": true,
+    "description": "We're seeking a Senior Frontend Engineer to lead our web app development. We will also be building an Android and iOS app in parallel, so there may be room to stretch impact depending on your skills. You'll architect the Android stack, set standards, and build a highly performant, reliable, and secure app from the ground up. This role could evolve into a mobile lead across platforms as we scale.",
+    "requirements": [
+      "5+ years building and shipping consumer-facing mobile-friendly web apps natively in React.js"
+    ],
+    "bonuses": [
+      "Experience building for the Latin American Market",
+      "Experience in financial technology",
+      "Good design sense",
+      "Full-stack engineering skillset and ability to flex across other parts of the stack"
+  ]
+  },
+  {
+  "title": "React / React Native",
+    "location": "Remote - México / LATAM",
+    "modality": "remote",
+    "relocation": false,
+  "description": "Buscamos un(a) Senior Full Stack Engineer con enfoque en React, React Native y desarrollo full stack para unirse a nuestro equipo y llevar una nueva plataforma al mercado. Serás responsable de construir las bases, infraestructura y cultura de ingeniería desde cero. Tendrás un rol muy práctico en el código y también influirás en cómo opera el equipo de ingeniería a medida que escalamos. Trabajarás en apps nativas y web, con alto impacto y autonomía en un producto en etapa temprana para una empresa de USA, 100% remoto desde México o LATAM.",
+    "requirements": [
+      "Experiencia senior en desarrollo full stack (React, React Native, NodeJS, NextJS, Typescript)",
+      "Experiencia con bases de datos: MongoDB y PostgreSQL"
+    ],
+    "bonuses": [
+      "Experiencia con AWS (EBS, CodeBuild)",
+      "Experiencia en equipos distribuidos internacionales",
+      "Inglés intermedio-avanzado"
+  ]
+  },
+  {
+    "title": "Senior Full Stack Engineer",
+    "location": "SFO, CA",
+    "modality": "local",
+    "relocation": true,
+    "description": "A Senior Full Stack Engineer on our team is an opportunistic role for the rare candidates that have expertise across several parts of our technical stack. We are building: An iOS App (Swift), An Android App (Kotlin or Java), A Web app (Reactjs), A standalone backend (Python + Go/Rust as needed, Postgres, AWS). If you possess a combination of these skillsets, then a full-stack role may be a good fit for you. We encourage you to also read the other relevant job descriptions for our Senior Android/iOS/Frontend/Backend positions for more detail. As an early member of our team, we are looking for you to architect our full engineering stack, set standards, and build a highly performant, reliable, and secure app from the ground up. This will be an ambitious and demanding role -- we are building a financial services application with significant complexity handling real money internationally at scale, and you will be working across the stack. This role may evolve into a general engineering lead across platforms as we scale.",
+    "requirements": [
+      "5+ years building and shipping consumer-facing mobile/web apps with full stack exposure (React, Typescript, Python, Go, and/or Rust, Postgres, AWS, Vercel, etc.)."
+    ],
+    "bonuses": [
+      "Experience building for the Latin American Market",
+      "Experience in financial technology",
+      "Good design sense"
+  ]
+  }
+]

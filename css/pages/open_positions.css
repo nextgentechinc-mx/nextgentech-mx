@@ -1,0 +1,86 @@
+/* open_positions.css - estilos específicos para la página de vacantes */
+
+/* Resalta el correo de postulación */
+.apply-instructions a {
+  color: #0070f3;
+  font-weight: 600;
+  text-decoration: underline;
+  word-break: break-all;
+  transition: color 0.2s;
+}
+.apply-instructions a:hover {
+  color: #0051a8;
+}
+
+/* Mejora visual de la caja de instrucciones */
+.apply-instructions {
+  background: #f6fafd;
+  border-left: 4px solid #0070f3;
+  padding: 1em 1.5em;
+  margin-bottom: 2em;
+  border-radius: 6px;
+  font-size: 1.08em;
+  box-shadow: 0 2px 8px 0 rgba(0,32,64,0.04);
+}
+
+/* Títulos de vacantes */
+.job-title {
+  background: none;
+  border: none;
+  color: #1a237e;
+  font-size: 1.18em;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.6em 0.2em;
+  text-align: left;
+  width: 100%;
+  border-bottom: 1px solid #e3e8f0;
+  transition: color 0.2s;
+}
+.job-title:hover, .job-title[aria-expanded="true"] {
+  color: #0070f3;
+}
+
+.job-location {
+  color: #607d8b;
+  font-size: 0.98em;
+  font-weight: 400;
+  margin-left: 0.5em;
+}
+
+.job-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px 0 rgba(0,32,64,0.04);
+  margin-bottom: 1.2em;
+  overflow: hidden;
+  border: 1px solid #e3e8f0;
+}
+
+.job-details {
+  padding: 1em 1.5em 1.2em 1.5em;
+  color: #263238;
+}
+
+.job-desc {
+  margin-bottom: 0.7em;
+  font-size: 1.04em;
+}
+
+.job-reqs, .job-bonuses ul {
+  margin: 0.5em 0 0.5em 1.2em;
+  padding: 0;
+  list-style: disc;
+}
+
+.job-bonuses {
+  margin-top: 0.7em;
+  color: #0070f3;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .job-details, .apply-instructions {
+    padding: 1em 0.7em;
+  }
+}
